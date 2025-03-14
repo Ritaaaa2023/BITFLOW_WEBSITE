@@ -2,7 +2,7 @@ import React from 'react'
 import"./Header.css";
 import { Link } from "react-scroll";
 import Achievememt from '../Achievement';
-import {home_image} from "../../asset"
+import {company03} from "../../assets";
 
 
 const homeImage =
@@ -34,7 +34,7 @@ const Header= () => {
           </div>
           <div className="column">
             <div className="image_container">
-              <img src={home_image} alt="" />
+              <img src={company03} alt="" />
             </div>
           </div>
         </div>

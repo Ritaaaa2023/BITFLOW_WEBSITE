@@ -6,10 +6,10 @@ import { SiBlueprint,SiHomeassistantcommunitystore  } from "react-icons/si";
 import { AiOutlineFileProtect } from "react-icons/ai";
 import { IoConstructSharp } from "react-icons/io5";
 import { GrUserManager } from "react-icons/gr";
-import { profile2, profile3,profile4,profile5,
+import { 
          member1, member2, member3, member4,building_5,building_6,
-         building_7, building_8,building_9,building_10,
-        blog_1,blog_2,blog_3} from "./assets";
+         building_7, building_8,
+       } from "./assets";
 
 export const navTabs = [
     {name:"Home",id:'header'},
@@ -17,256 +17,289 @@ export const navTabs = [
     {name:"Services",id:'services'},
     {name:"Team",id:'team'},
     {name:"Project",id:'project'},
-    {name:"Testimonial",id:'testimonial'},
-    {name:"Blog",id:'blog'},
+    // {name:"Testimonial",id:'testimonial'},
+    
 ];
 
+// export const services = [
+//   {
+//     name:"General Contracting",
+//     icon:<SiBlueprint/>,
+//     description:`This involves overseeing the entire construction project from start to finish, 
+//         including hiring subcontractors, managing the budget, scheduling, and ensuring that the
+//         project meets all specifications and regulations.`,
+//   },
+//   {
+//     name:"Design-Build Services",
+//     icon:<FaDrawPolygon/>,
+//     description:`This service combines both the design and construction phases into a single 
+//        contract, streamlining the process and improving communication between the design and
+//         construction teams.
+
+//     `,
+//   },
+//   {
+//     name:"Project Management",
+//     icon:<GrUserManager/>,
+//     description:`Construction companies often provide project management services, which include 
+//        planning, coordinating, and overseeing projects to ensure they are completed on time, within 
+//        budget, and to the required quality standards.`,
+//   },
+//   {
+//     name:"Renovation and Remodeling",
+//     icon:<SiHomeassistantcommunitystore/>,
+//     description:`Many construction companies specialize in renovation and remodeling services, 
+//                 which involve updating and improving existing structures. This can range from minor 
+//                 repairs to major overhauls of residential, commercial, or industrial properties.`,
+//   },
+//   {
+//     name:"Site Preparation",
+//     icon:<AiOutlineFileProtect/>,
+//     description:`Before construction begins, companies often handle site preparation tasks such 
+//     as land clearing, excavation, grading, and utility installation to ensure the site is ready 
+//     for building.`,
+//   },
+//   {
+//     name:"Specialty Construction Services",
+//     icon:<IoConstructSharp/>,
+//     description:`This can include services like roofing, concrete work, steel erection, plumbing, 
+//     electrical work, and other specialized trades necessary for specific aspects of the construction project.`,
+//   },
+// ]
 export const services = [
   {
-    name:"General Contracting",
-    icon:<SiBlueprint/>,
-    description:`This involves overseeing the entire construction project from start to finish, 
-        including hiring subcontractors, managing the budget, scheduling, and ensuring that the
-        project meets all specifications and regulations.`,
+    name: "Business Platforms",
+    icon: <SiBlueprint />,
+    description: `We help businesses build seamless digital ecosystems, integrating platforms to enhance customer relationships, improve collaboration, and optimize assets.`,
   },
   {
-    name:"Design-Build Services",
-    icon:<FaDrawPolygon/>,
-    description:`This service combines both the design and construction phases into a single 
-       contract, streamlining the process and improving communication between the design and
-        construction teams.
+    name: "Data Intelligence & Process Optimization",
+    icon: <FaDrawPolygon />,
+    description: `Leverage advanced data analytics to drive smarter business decisions, optimize workflows, and create a more efficient, scalable future for your enterprise.`,
+  },
+  {
+    name: "Software Engineering",
+    icon: <GrUserManager />,
+    description: `From full-stack development to cloud-native applications, our team delivers high-performance software solutions tailored to your business needs.`,
+  },
+  {
+    name: "Digital Experience",
+    icon: <SiHomeassistantcommunitystore />,
+    description: `We create intuitive, user-friendly digital experiences across web and mobile platforms, ensuring seamless engagement and interaction for your customers.`,
+  },
+  {
+    name: "Cloud Solutions",
+    icon: <AiOutlineFileProtect />,
+    description: `Empower your business with secure, scalable cloud strategies that optimize operations, reduce infrastructure costs, and enhance system reliability.`,
+  },
+  {
+    name: "AI-Powered Automation",
+    icon: <IoConstructSharp />,
+    description: `Enhance efficiency and reduce manual effort with AI-driven automation, from intelligent document processing to predictive analytics and AI-powered insights.`,
+  },
+];
 
-    `,
-  },
-  {
-    name:"Project Management",
-    icon:<GrUserManager/>,
-    description:`Construction companies often provide project management services, which include 
-       planning, coordinating, and overseeing projects to ensure they are completed on time, within 
-       budget, and to the required quality standards.`,
-  },
-  {
-    name:"Renovation and Remodeling",
-    icon:<SiHomeassistantcommunitystore/>,
-    description:`Many construction companies specialize in renovation and remodeling services, 
-                which involve updating and improving existing structures. This can range from minor 
-                repairs to major overhauls of residential, commercial, or industrial properties.`,
-  },
-  {
-    name:"Site Preparation",
-    icon:<AiOutlineFileProtect/>,
-    description:`Before construction begins, companies often handle site preparation tasks such 
-    as land clearing, excavation, grading, and utility installation to ensure the site is ready 
-    for building.`,
-  },
-  {
-    name:"Specialty Construction Services",
-    icon:<IoConstructSharp/>,
-    description:`This can include services like roofing, concrete work, steel erection, plumbing, 
-    electrical work, and other specialized trades necessary for specific aspects of the construction project.`,
-  },
-]
+
+// export const teams = [
+//   {
+//     name:"Oluoma James",
+//     title:"Technician",
+//     profile:member1,
+//     description:`Oluoma is a skilled technician with over 10 years of experience in the construction industry.
+//   },
+//   {
+//     name:"Mary Brown",
+//     title:"Technician",
+//     profile:member2,
+//     description:`Oluoma is a skilled technician with over 10 years of experience in the construction industry.
+//   },
+//   {
+//     name:"Lawrence Onu",
+//     title:"Technician",
+//     profile:member3,
+//     description:`Oluoma is a skilled technician with over 10 years of experience in the construction industry.
+  
+//   },
+//   {
+//     name:"Joy Eze",
+//     title:"Technician",
+//     profile:member4,
+//     description:`Oluoma is a skilled technician with over 10 years of experience in the construction industry.
+//   },
+// ]
 
 export const teams = [
   {
-    name:"Oluoma James",
-    title:"Technician",
-    profile:member1,
-    social:[
-      {name:"Facebook",icon:<CiFacebook/>,url:"http://facebook.com"},
-      {name:"LinkedIn",icon:<CiLinkedin/>,url:"http://linkedin.com"},
-      {name:"Youtube",icon:<FaYoutube/>,url:"https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1"},
-      {name:"Instagram",icon:<FaInstagram/>,url:"http://instagram.com"},
-    ]
+    name: "Sean Sheng",
+    title: "CEO ｜ Product Manager",
+    profile: member2,
+    description:
+      "Data science professional with deep market experience in New Zealand. Specializes in AI, data structures, and retail industry applications.",
   },
   {
-    name:"Mary Brown",
-    title:"Technician",
-    profile:member2,
-    social:[
-      {name:"Facebook",icon:<CiFacebook/>,url:"http://facebook.com"},
-      {name:"LinkedIn",icon:<CiLinkedin/>,url:"http://linkedin.com"},
-      {name:"Youtube",icon:<FaYoutube/>,url:"https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1"},
-      {name:"Instagram",icon:<FaInstagram/>,url:"http://instagram.com"},
-    ]
+    name: "Zeel Wang",
+    title: "CTO ｜ Lead Engineer",
+    profile: member1,
+    description:
+      "Tech lead from a renowned internet company, specializing in product design, system architecture, and performance optimization. Holds multiple patents with expertise in large-scale system development.",
+  },
+
+  {
+    name: "Sabina Ding",
+    title: "Fullstack Developer ｜ Cloud Architect",
+    profile: member3,
+    description:
+      "Cloud architect and full-stack developer with hands-on experience in DevOps, cloud architecture design and large-scale system development. ",
   },
   {
-    name:"Lawrence Onu",
-    title:"Technician",
-    profile:member3,
-    social:[
-      {name:"Facebook",icon:<CiFacebook/>,url:"http://facebook.com"},
-      {name:"LinkedIn",icon:<CiLinkedin/>,url:"http://linkedin.com"},
-      {name:"Youtube",icon:<FaYoutube/>,url:"https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1"},
-      {name:"Instagram",icon:<FaInstagram/>,url:"http://instagram.com"},
-    ]
+    name: "Rita Wang",
+    title: "Frontend ｜ UX Specialist",
+    profile: member4,
+    description:
+      "Frontend developer with Fortune 500 experience, specializing in UX design and high-performance web applications.",
   },
-  {
-    name:"Joy Eze",
-    title:"Technician",
-    profile:member4,
-    social:[
-      {name:"Facebook",icon:<CiFacebook/>,url:"http://facebook.com"},
-      {name:"LinkedIn",icon:<CiLinkedin/>,url:"http://linkedin.com"},
-      {name:"Youtube",icon:<FaYoutube/>,url:"https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1"},
-      {name:"Instagram",icon:<FaInstagram/>,url:"http://instagram.com"},
-    ]
-  },
-]
+];
 
 export const projects = [
   {
-    title:"Residential Development Project",
-    image:building_5,
-    description:`A comprehensive residential development involving the construction of a new 
-        housing community from initial site clearing and preparation to final home construction and landscaping`,
+    title: "Hospital Management System",
+    image: building_6,
+    description:
+      "A smart telemedicine platform connecting patients, doctors, and pharmacists. Patients can book appointments, consult via text, image, or video, and manage medical records and prescriptions. Doctors handle consultations, issue medical records, and prescribe medications. Pharmacists oversee drug inventory. AI-driven scheduling, secure consultations, and automated prescription management enhance efficiency and patient care.",
   },
   {
-    title:"Commercial Office Building",
-    image:building_6,
-    description:`The construction of a multi-story office building including all 
-       architectural and structural design, coordination of specialized trades for 
-       HVAC and electrical systems, and complete project oversight.`,
+    title: "Medical Product Recognition App",
+    image: building_5,
+    description:
+      "Enhancing nursing efficiency with AI-powered surgical event documentation, medical item recognition, inventory and event management—reducing errors, improving workflow, and enabling better patient care.",
   },
+
   {
-    title:"Retail Space Renovation",
-    image:building_7,
-    description:`Transforming an outdated retail store into a modern commercial space, 
-    involving interior demolition, new layout design, installation of new fixtures, 
-    and updating utilities.`,
-  },
+    title: "Online Course Management System",
+    image: building_7,
+    description:
+    "A comprehensive e-learning platform connecting students, teachers, and admins. Students can enroll in courses, manage learning progress, and evaluate completed courses. Teachers oversee course management, student performance, and grading. Admins handle course creation, announcements, and user management. The system includes role-based access, profile customization, and secure authentication, ensuring a seamless and efficient online learning experience."
+},
   {
-    title:"Industrial Warehouse Construction",
-    image:building_8,
-    description:`Building a large-scale industrial warehouse, including land clearing,
-     foundation work, steel structure erection, and complete construction management 
-     from start to finish.`,
-  },
-  {
-    title:"Historic Building Restoration",
-    image:building_9,
-    description:`Restoring and renovating a historic building to preserve its architectural integrity while updating it to meet modern standards, involving meticulous 
-    craftsmanship and specialized restoration techniques.`,
-  },
-  {
-    title:"Educational Facility Expansion",
-    image:building_10,
-    description:`Expanding an existing school with new classrooms and facilities, encompassing all phases from initial design and site preparation to construction and 
-    final project management to ensure timely completion.`,
+    title: "Cross-Platform Calendar & Order Management System",
+    image: building_8,
+    description:
+      "A unified system for synchronizing calendar events across platforms and centralizing order management. It integrates multiple platforms, consolidates orders, and assigns tasks to employees via third-party task management tools—ensuring seamless data connectivity, efficient workflow automation, and improved operational oversight.",
   },
 ];
 
 
-export const testimonial = [
-  {
-    image:profile2,
-    name:'Samuel Eze',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
-  },
-  {
-    image:profile3,
-    name:'Emmanuel Joseph',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  },
-  {
-    image:profile4,
-    name:'Gloria Chiwendu',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
-  },
-  {
-    image:profile5,
-    name:'Precious Stone',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  }
+// export const testimonial = [
+//   {
+//     image:profile2,
+//     name:'Samuel Eze',
+//     review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+//             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+//            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
+//   },
+//   {
+//     image:profile3,
+//     name:'Emmanuel Joseph',
+//     review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+//             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+//            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
+//   },
+//   {
+//     image:profile4,
+//     name:'Gloria Chiwendu',
+//     review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+//             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+//            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
+//   },
+//   {
+//     image:profile5,
+//     name:'Precious Stone',
+//     review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+//             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+//            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
+//   }
 
-];
+// ];
 
 
-export const blogs = [
-  {
-      title:"Sustainable Construction: Building for the Future",
-      image:blog_1,
-      category:"Building",
-      content:`
-        As the construction industry continues to evolve, the focus on sustainability 
-        has never been more critical. Sustainable construction is not just a trend; 
-        it's a necessity for our planet's future. In this blog post, we'll explore 
-        the principles of sustainable construction, the benefits it offers, and how 
-        our company is leading the way in eco-friendly building practices.
-      `,
-      date:new Date("January 10, 2024"),
-      likeCount:34,
-      commentCount:4,
-      tags:["Edu4CommDev","CommGrowthEdu","EducateCommunities"],
-      poster:{
-          name:"Johnson",
-      },
-  },
-  {
-      title:"The Importance of Quality Craftsmanship in Construction",
-      image:blog_2,
-      category:"Construction",
-      content:`
-        Quality craftsmanship is the cornerstone of any successful construction project.
-         It ensures that buildings are not only aesthetically pleasing but also durable 
-         and safe. In this blog post, we'll delve into why quality craftsmanship matters 
-         and how our company upholds the highest standards in every project we undertake.
-      `,
-      date:new Date("December 15, 2023"),
-      likeCount:201,
-      commentCount:123,
-      tags:["Skills4Growth","EconSkillImpact","GrowWithSkills"],
-      poster:{
-          name:"Bissi",
-      },
-  },
-  {
-      title:"Innovative Technologies Transforming the Construction Industry",
-      image:blog_3,
-      category:"Innovations",
-      content:`
-      The construction industry is undergoing a revolution, thanks to the advent of 
-      innovative technologies. These advancements are making construction projects 
-      more efficient, cost-effective, and sustainable. In this blog post, we'll 
-      explore some of the most exciting technologies transforming the way we build 
-      and how our company is leveraging them to deliver superior results.
-      `,
-      date:new Date("July 20, 2023"),
-      likeCount:198,
-      commentCount:121,
-      tags:["CommEdu","CommunityEngagement","EduCommunity"],
-      poster:{
-          name:"Abisola",
-      },
-  },
-];
+// export const blogs = [
+//   {
+//       title:"Sustainable Construction: Building for the Future",
+//       image:blog_1,
+//       category:"Building",
+//       content:`
+//         As the construction industry continues to evolve, the focus on sustainability 
+//         has never been more critical. Sustainable construction is not just a trend; 
+//         it's a necessity for our planet's future. In this blog post, we'll explore 
+//         the principles of sustainable construction, the benefits it offers, and how 
+//         our company is leading the way in eco-friendly building practices.
+//       `,
+//       date:new Date("January 10, 2024"),
+//       likeCount:34,
+//       commentCount:4,
+//       tags:["Edu4CommDev","CommGrowthEdu","EducateCommunities"],
+//       poster:{
+//           name:"Johnson",
+//       },
+//   },
+//   {
+//       title:"The Importance of Quality Craftsmanship in Construction",
+//       image:blog_2,
+//       category:"Construction",
+//       content:`
+//         Quality craftsmanship is the cornerstone of any successful construction project.
+//          It ensures that buildings are not only aesthetically pleasing but also durable 
+//          and safe. In this blog post, we'll delve into why quality craftsmanship matters 
+//          and how our company upholds the highest standards in every project we undertake.
+//       `,
+//       date:new Date("December 15, 2023"),
+//       likeCount:201,
+//       commentCount:123,
+//       tags:["Skills4Growth","EconSkillImpact","GrowWithSkills"],
+//       poster:{
+//           name:"Bissi",
+//       },
+//   },
+//   {
+//       title:"Innovative Technologies Transforming the Construction Industry",
+//       image:blog_3,
+//       category:"Innovations",
+//       content:`
+//       The construction industry is undergoing a revolution, thanks to the advent of 
+//       innovative technologies. These advancements are making construction projects 
+//       more efficient, cost-effective, and sustainable. In this blog post, we'll 
+//       explore some of the most exciting technologies transforming the way we build 
+//       and how our company is leveraging them to deliver superior results.
+//       `,
+//       date:new Date("July 20, 2023"),
+//       likeCount:198,
+//       commentCount:121,
+//       tags:["CommEdu","CommunityEngagement","EduCommunity"],
+//       poster:{
+//           name:"Abisola",
+//       },
+//   },
+// ];
 
 
 export const contacts = [
   {
-    name:"Email",
-    value:"mradinuba@gmail.com",
-    icon:<MdOutlineAlternateEmail />,
+    name: "Email",
+    value: "bitflow2025@gmail.com",
+    icon: <MdOutlineAlternateEmail />,
   },
   {
-    name:"Phone Number",
-    value:"+2348149121918",
-    icon:<IoCallOutline/>,
+    name: "Phone Number",
+    value: "+0221700698",
+    icon: <IoCallOutline />,
   },
   {
-    name:"Address",
-    value:"Gwarinpa, Abuja, Nigeria",
-    icon:<IoLocationOutline/>,
+    name: "Address",
+    value:
+      "Unleash Space, Engineering Building, University of Auckland",
+    icon: <IoLocationOutline />,
   },
-]
+];
 
 
 export const footer = [
@@ -286,8 +319,8 @@ export const footer = [
           {name:"Services",id:'services'},
           {name:"Team",id:'team'},
           {name:"Project",id:'project'},
-          {name:"Testimonial",id:'testimonial'},
-          {name:"Blog",id:'blog'},
+          // {name:"Testimonial",id:'testimonial'},
+          // {name:"Blog",id:'blog'},
         ]
       },
 ]

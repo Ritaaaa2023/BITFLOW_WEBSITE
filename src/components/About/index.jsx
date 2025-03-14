@@ -1,6 +1,14 @@
 import React from "react";
 import "./About.css";
-import { about_image, building_1, building_2, building_3 } from "../../assets";
+import {
+  about_image,
+  about01,
+  company01,
+  company06,
+  company07,
+  company08,
+  home_image,
+} from "../../assets";
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-scroll";
 
@@ -9,7 +17,7 @@ const About = () => {
     <section id="about">
       <div className="container">
         <div className="column company_photo">
-          <img src={about_image} alt="bitflow" />
+          <img src={about01} alt="bitflow" />
         </div>
         <div className="column">
           <h1 className="title">
@@ -18,16 +26,16 @@ const About = () => {
           </h1>
           <div className="company_media_container">
             <div className="box">
-              <img src={building_1} alt="" />
+              <img src={company01} alt="" />
             </div>
             <div className="box">
-              <img src={building_2} alt="" />
+              <img src={company06} alt="" />
             </div>
             <div className="box">
-              <img src={building_3} alt="" />
+              <img src={company08} alt="" />
             </div>
           </div>
-          <p className="text_muted description">
+          <p className="text_muted description" style={{color: "#7d7d82"}}>
             Our vision is to empower businesses with AI, cloud, and data
             intelligence, enabling seamless automation, smarter decision-making,
             and scalable growth. We help companies reduce costs, optimize
@@ -78,8 +86,8 @@ const About = () => {
               <Link to="project" smooth={true} className="btn">
                 Explore
               </Link>
-              <Link to="contact" smooth={true} className="btn btn_primary">
-                Get a quote
+              <Link to="contact" smooth={true} className="btn btn_primary" >
+               Consult
               </Link>
             </div>
           </div>

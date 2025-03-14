@@ -4,7 +4,7 @@ import"./Testimonial.css";
 const Testimonial = () => {
   return (
     <div>
-      Testimonial
+      {/* Testimonial */}
     </div>
   )
 }

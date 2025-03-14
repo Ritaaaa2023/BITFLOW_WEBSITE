@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar"
 import Header from "./components/Header"
 import About from "./components/About"
-import Services from "./components/Service"
+import Services from "./components/Services"
 import Teams from "./components/Teams"
 import Project from "./components/Project"
 import Testimonial from "./components/Testimonial"
@@ -21,7 +21,7 @@ function App() {
       <Teams />
       <Project />
       <Testimonial />
-      <Blog />
+      {/* <Blog /> */}
       <Contact />
       <Footer />
     </>

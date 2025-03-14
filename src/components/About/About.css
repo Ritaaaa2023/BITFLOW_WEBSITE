@@ -15,6 +15,7 @@
   overflow: hidden;
   max-width: 400px;
   margin:auto;
+  padding-right: 50px;
 }
 
 #about .company_photo:hover img{
@@ -75,10 +76,18 @@ transform: scale(1.2);
 
 #about .buttons_container{
   display: flex;
+ 
   align-items: center;
   gap: 20px;
   width: 100%;
+  margin-top: 30px;
+  
+
 }
+
+  /* #about .buttons_container .btn{
+ width: 45px;
+} */
 
 
 @media (max-width:900px){
@@ -98,8 +107,9 @@ transform: scale(1.2);
   #about .buttons_container{
     justify-content: center;
     gap:10px;
-
+align-items: center;
   }
+
 
   #about .group .row .icon_container{
     width:1.5rem;
@@ -111,8 +121,12 @@ transform: scale(1.2);
 }
 
 @media (max-width:600px){
-  #about .company_media_container{
-    width: 90px;
-    height: 90px;
+  /* #about .company_media_container{
+    width: 120px;
+    height: 120px;
+  } */
+ #about .buttons_container{
+    justify-content: center;
+   align-items: center;
   }
 }
