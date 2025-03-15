@@ -18,8 +18,7 @@ function Home() {
       <Services />
       <Teams />
       <Project />
-      {/* <Testimonial /> */}
-      {/* <Blog /> */}
+     
       <Contact />
 
       <Footer />

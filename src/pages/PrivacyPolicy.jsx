@@ -26,9 +26,7 @@ const PrivacyPolicy = () => {
       <p>
         We implement industry-standard security measures to protect your data.
       </p>
-      <Link to="/" className="btn btn-primary">
-        Back to Home
-      </Link>
+      
     </div>
   );
 };

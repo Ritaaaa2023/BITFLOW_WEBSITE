@@ -103,14 +103,14 @@ input{
   width: 100%;
 }
 #contact .contact_card {
-  width: 100%; /* Allows the card to take full width */
-  max-width: 500px; /* Limits the card width on larger screens */
+  width: 100%; 
+  max-width: 500px; 
 }
 
 #contact .contact_card img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures the image scales properly */
+  object-fit: cover; 
   border-radius: var(--radius-3);
 }
 
@@ -137,6 +137,7 @@ input{
   font-size: 16px;
   font-weight: 600;
   margin: 10px 0;
+  
 }
 
 
@@ -169,7 +170,7 @@ input{
 
 @media (max-width: 600px) {
   #contact .contact_card {
-    max-width: 100%; /* Allows full width on mobile */
+    max-width: 100%; 
     padding: 10px;
   }
 

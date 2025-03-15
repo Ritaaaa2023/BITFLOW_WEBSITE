@@ -19,9 +19,9 @@ const CookiePolicy = () => {
       <h2>3. Managing Cookies</h2>
       <p>You can control and disable cookies through your browser settings.</p>
 
-      <Link to="/" className="btn btn-primary">
+      {/* <Link to="/" className="btn btn-primary">
         Back to Home
-      </Link>
+      </Link> */}
     </div>
   );
 };

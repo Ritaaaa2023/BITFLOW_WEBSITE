@@ -58,8 +58,8 @@
 #header .image_container img {
   width: 100%;
   height: auto;
-  border-radius: inherit; /* 确保 img 也有 radius */
-  object-fit: cover; /* 让图片适应 */
+  border-radius: inherit; 
+  object-fit: cover; 
 }
 
 #header .image_container:hover{
@@ -89,7 +89,7 @@
 
 @media (max-width: 430px){
   #header .title .g-text {
-    display: block; /* Forces "Smarter Business" onto a new line */
-    margin-top: 5px; /* Optional: Adjust spacing */
+    display: block; 
+    margin-top: 5px; 
   }
 }

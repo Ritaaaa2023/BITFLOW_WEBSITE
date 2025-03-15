@@ -57,10 +57,10 @@ justify-content: space-between;
 }
 #footer .newsletter .control,
 #footer .newsletter .btn {
-  height: 50px; /* ✅ Set a fixed height to match both */
-  line-height: 50px; /* ✅ Aligns text vertically */
-  padding: 0 15px; /* ✅ Ensures even spacing */
-  border: none; /* ✅ Removes any default border issues */
+  height: 50px; 
+  line-height: 50px; 
+  padding: 0 15px; 
+  border: none; 
 }
 
 

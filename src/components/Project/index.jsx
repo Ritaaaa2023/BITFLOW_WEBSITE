@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Project.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { projects,hospital } from "../../data";
-import { FcNext } from "react-icons/fc";
-import { GoCheckCircle } from "react-icons/go";
-import { Space } from "antd";
+
 
 const Project = () => {
   function SampleArrow(props) {
@@ -38,7 +36,7 @@ const Project = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
           centerPadding: 0,
@@ -49,10 +47,10 @@ const Project = () => {
 
   const settings2 = {
     infinite: true,
-    speed: 500,
+    speed: 3000,
     slidesToShow: 4,
     slidesToScroll: 4,
-    initialSlide: 0,
+    
     nextArrow: <SampleArrow />,
     prevArrow: <SampleArrow />,
     responsive: [
@@ -61,7 +59,7 @@ const Project = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
+         
           dots: true,
         },
       },
@@ -70,7 +68,7 @@ const Project = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 1,
+         
           dots: true,
          
         },
@@ -107,9 +105,7 @@ const Project = () => {
                     ))}
                   </ul>
                 </p>
-                {/* <button className="btn" onClick={() => toggleReadMore(index)}>
-                  {expandedIndex === index ? "Read less" : "Read more"}
-                </button> */}
+              
               </div>
             </React.Fragment>
           ))}
@@ -125,7 +121,7 @@ const Project = () => {
                 <img src={project.image} alt="" />
               </div>
               <div className="box">
-                {/* <h1 className="name">{project.industry}</h1> */}
+               
                
                   <h4 className="name">{project.title1}</h4>
              
@@ -140,9 +136,7 @@ const Project = () => {
                     ))}
                   </ul>
                 </p>
-                {/* <button className="btn" onClick={() => toggleReadMore(index)}>
-                  {expandedIndex === index ? "Read less" : "Read more"}
-                </button> */}
+             
               </div>
             </React.Fragment>
           ))}

@@ -85,9 +85,7 @@ transform: scale(1.2);
 
 }
 
-  /* #about .buttons_container .btn{
- width: 45px;
-} */
+
 
 
 @media (max-width:900px){
@@ -121,10 +119,7 @@ align-items: center;
 }
 
 @media (max-width:600px){
-  /* #about .company_media_container{
-    width: 120px;
-    height: 120px;
-  } */
+ 
  #about .buttons_container{
     justify-content: center;
    align-items: center;
@@ -142,7 +137,7 @@ align-items: center;
 }
 
   .row {
-    justify-content: flex-start; /* Align text to the left */
+    justify-content: flex-start; 
     text-align: left;
   }
    #about .buttons_container{

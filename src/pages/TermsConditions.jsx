@@ -19,9 +19,9 @@ const TermsConditions = () => {
         services.
       </p>
 
-      <Link to="/" className="btn btn-primary">
+      {/* <Link to="/" className="btn btn-primary">
         Back to Home
-      </Link>
+      </Link> */}
     </div>
   );
 };

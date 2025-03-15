@@ -1,20 +1,46 @@
-import React from 'react'
+import React, { useState } from "react";
 import Logo from '../Logo'
 import { footer } from '../../data'
 import { Link } from "react-scroll";
 import './Footer.css'
-import { Input } from "antd";
-import { AudioOutlined } from "@ant-design/icons";
-// import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { message } from "antd";
+
+import emailjs from "@emailjs/browser"; 
 
 
 
-const { Search } = Input;
 
 
 const Footer = () => {
-  const navigate = useNavigate();
+const [email, setEmail] = useState(""); 
+
+
+
+const sendEmail = async () => {
+  if (!email) {
+    message.warning("Please enter your email.");
+    return;
+  }
+
+  try {
+    await emailjs.send(
+      "service_5g4m44e", 
+     "template_2s3pk5d",
+      { user_email: email }, 
+      "DGNZsn9pZrhCpb9IT" 
+    );
+
+    message.success("Subscribed successful!");
+    setEmail(""); 
+  } catch (error) {
+    console.error("Email send failed:", error);
+    message.warning("Subscribed failed. Please try again.");
+  }
+};
+
+
+
+
   return (
     <footer id="footer">
       <div className="container">
@@ -30,8 +56,10 @@ const Footer = () => {
                   type="email"
                   placeholder="Enter your email address"
                   className="control"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
-                <button className="btn" type="button">
+                <button className="btn" type="button" onClick={sendEmail}>
                   Subscribe
                 </button>
               </div>
@@ -41,22 +69,7 @@ const Footer = () => {
             <div className="column" key={index}>
               <div className="routes_name">{list.name}</div>
               <div className="routes_container">
-                {/* {list.routes.map((route, i) =>
-                  route.path ? (
-                    <button
-                      key={i}
-                      onClick={() => navigate(route.path)}
-                      className="route_item"
-                      
-                    >
-                      <p className="name">{route.name}</p>
-                    </button>
-                  ) : (
-                    <Link to={route.id} key={i} className="route_item">
-                      <p className="name">{route.name}</p>
-                    </Link>
-                  )
-                )} */}
+                
 
                 {list.routes.map((route, i) => (
                   <Link to={route.id} key={i} className="route_item">

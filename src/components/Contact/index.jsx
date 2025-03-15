@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from "react";
 import "./Contact.css"
 import { contacts } from '../../data';
-import { Button, Flex, Form, Input, Select,Space } from "antd";
+import { Button, Flex, Form, Input,message} from "antd";
 import { success } from '../../assets';
 import { Card } from "antd";
 const { Meta } = Card;
+import emailjs from "@emailjs/browser";
+
 
 
 const Contact = () => {
   const [form] = Form.useForm();
+  const [messageSent, setMessageSent] = useState(false);
+
   const layout = {
     labelCol: {
       span: 36,
@@ -17,12 +21,7 @@ const Contact = () => {
       span: 36,
     },
   };
-  const tailLayout = {
-    wrapperCol: {
-      offset: 8,
-      span: 16,
-    },
-  };
+
 
    const onFinish = (values) => {
      console.log(values);
@@ -31,11 +30,41 @@ const Contact = () => {
      form.resetFields();
    };
 
+
+
+
+    const sendEmail = async () => {
+      try {
+        const values = form.getFieldsValue(); 
+
+        const templateParams = {
+          firstname: values.firstname,
+          lastname: values.lastname,
+          email: values.email,
+          phone: values.phone,
+          companyname: values.companyname,
+          intro: values.intro,
+        };
+
+        await emailjs.send(
+          "service_5g4m44e", 
+          "template_2s3pk5d", 
+          templateParams,
+          "DGNZsn9pZrhCpb9IT" 
+        );
+
+        console.log("Email sent successfully!");
+      
+        form.resetFields(); 
+        message.success("Email sent successfully!");
+      } catch (error) {
+         message.warning("Email send failed!");
+      }
+    };
+
   return (
     <section id="contact">
-      {/* <h1 className="title">
-        Contact <span className="g-text">US</span>
-      </h1> */}
+   
       <div className="container">
         <div className="contact_form">
           <div className="contact_form_top">
@@ -150,13 +179,12 @@ const Contact = () => {
               </Form.Item>
               <div className="contact_form_bottom">
                 <Form.Item style={{ width: "100%", textAlign: "center" }}>
-                  {/* <Button htmlType="button" onClick={onReset} className="btn">
-                      Reset
-                    </Button> */}
+                 
                   <button
                     type="primary"
                     htmlType="submit"
                     className="btn btn_primary"
+                    onClick={sendEmail}
                   >
                     Send
                   </button>

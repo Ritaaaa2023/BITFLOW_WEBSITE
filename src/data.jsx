@@ -17,7 +17,7 @@ export const navTabs = [
     {name:"Services",id:'services'},
     {name:"Team",id:'team'},
     {name:"Project",id:'project'},
-    // {name:"Testimonial",id:'testimonial'},
+   
     
 ];
 
@@ -100,45 +100,19 @@ export const services = [
 ];
 
 
-// export const teams = [
-//   {
-//     name:"Oluoma James",
-//     title:"Technician",
-//     profile:member1,
-//     description:`Oluoma is a skilled technician with over 10 years of experience in the construction industry.
-//   },
-//   {
-//     name:"Mary Brown",
-//     title:"Technician",
-//     profile:member2,
-//     description:`Oluoma is a skilled technician with over 10 years of experience in the construction industry.
-//   },
-//   {
-//     name:"Lawrence Onu",
-//     title:"Technician",
-//     profile:member3,
-//     description:`Oluoma is a skilled technician with over 10 years of experience in the construction industry.
-  
-//   },
-//   {
-//     name:"Joy Eze",
-//     title:"Technician",
-//     profile:member4,
-//     description:`Oluoma is a skilled technician with over 10 years of experience in the construction industry.
-//   },
-// ]
+
 
 export const teams = [
   {
     name: "Sean Sheng",
-    title: "CEO ｜ Product Manager",
+    title: "CEO | Product Manager",
     profile: member2,
     description:
       "Data science professional with deep market experience in New Zealand. Specializes in AI, data structures, and retail industry applications.",
   },
   {
     name: "Zeel Wang",
-    title: "CTO ｜ Lead Engineer",
+    title: "CTO | Lead Engineer",
     profile: member1,
     description:
       "Tech lead from a renowned internet company, specializing in product design, system architecture, and performance optimization. Holds multiple patents with expertise in large-scale system development.",
@@ -146,14 +120,14 @@ export const teams = [
 
   {
     name: "Sabina Ding",
-    title: "Fullstack Developer ｜ Cloud Architect",
+    title: "Fullstack Developer | Cloud Architect",
     profile: member3,
     description:
       "Cloud architect and full-stack developer with hands-on experience in DevOps, cloud architecture design and large-scale system development. ",
   },
   {
     name: "Rita Wang",
-    title: "Frontend ｜ UX Specialist",
+    title: "Frontend | UX Specialist",
     profile: member4,
     description:
       "Frontend developer with Fortune 500 experience, specializing in UX design and high-performance web applications.",
@@ -183,8 +157,8 @@ export const projects = [
       "Fast Surgical Event Documentation",
       "AI-Powered medical Item Recognition",
       "Automated Inventory Management",
-      "Stremlined Workflow design covering Multiple Scenarios",
-      "Enhanced Nursing Efficiency, accuracy & Patient Care",
+      "Stremlined Workflow design ",
+      "Enhanced Nursing Efficiency, accuracy ",
     ],
   },
 
@@ -202,13 +176,13 @@ export const projects = [
   },
   {
     industry: "Cross-Platform Data Integration",
-    title: "Unified Data Integration & Task Management",
+    title: "Unified Data Integration Platform",
     image: building_8,
     description: [
-      "Seamless cross-platform synchronization for calendar events, order management, and task allocation",
-      "Centralized data management to consolidate orders ",
-      "Automated task assignment via third-party management tools ",
-      "Real-time data connectivity across multiple platforms",
+      "Real-time data connectivity across platforms",
+      "Calendar events, order and task allocation",
+      "Centralized data management & analytics",
+      "Automated task assignment via third-party tools ",
     ],
   },
 ];
@@ -229,8 +203,8 @@ export const hospital = [
     description: [
       "Book Appointments",
       "Manage Appointment & Medical Records",
-      "Online Consultation via text, images, or secure video/audio calls",
-      "Patients receive prescriptions, make payments, and download prescription files",
+      "Online Consultation via text, images, or calls",
+      "Make payments, and manage prescriptions",
     ],
   },
 
@@ -240,7 +214,8 @@ export const hospital = [
 
     image: diagnose,
     description: [
-      "Access patient appointment records and track consultation progress",
+      "Access patient appointment records", 
+      "track consultation progress",
       "Diagnose and prescribe medications",
       "View patient payment history and medical records",
     ],
@@ -259,97 +234,6 @@ export const hospital = [
 ];
 
 
-// export const testimonial = [
-//   {
-//     image:profile2,
-//     name:'Samuel Eze',
-//     review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-//             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-//            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
-//   },
-//   {
-//     image:profile3,
-//     name:'Emmanuel Joseph',
-//     review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-//             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-//            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-//   },
-//   {
-//     image:profile4,
-//     name:'Gloria Chiwendu',
-//     review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-//             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-//            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
-//   },
-//   {
-//     image:profile5,
-//     name:'Precious Stone',
-//     review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-//             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-//            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-//   }
-
-// ];
-
-
-// export const blogs = [
-//   {
-//       title:"Sustainable Construction: Building for the Future",
-//       image:blog_1,
-//       category:"Building",
-//       content:`
-//         As the construction industry continues to evolve, the focus on sustainability 
-//         has never been more critical. Sustainable construction is not just a trend; 
-//         it's a necessity for our planet's future. In this blog post, we'll explore 
-//         the principles of sustainable construction, the benefits it offers, and how 
-//         our company is leading the way in eco-friendly building practices.
-//       `,
-//       date:new Date("January 10, 2024"),
-//       likeCount:34,
-//       commentCount:4,
-//       tags:["Edu4CommDev","CommGrowthEdu","EducateCommunities"],
-//       poster:{
-//           name:"Johnson",
-//       },
-//   },
-//   {
-//       title:"The Importance of Quality Craftsmanship in Construction",
-//       image:blog_2,
-//       category:"Construction",
-//       content:`
-//         Quality craftsmanship is the cornerstone of any successful construction project.
-//          It ensures that buildings are not only aesthetically pleasing but also durable 
-//          and safe. In this blog post, we'll delve into why quality craftsmanship matters 
-//          and how our company upholds the highest standards in every project we undertake.
-//       `,
-//       date:new Date("December 15, 2023"),
-//       likeCount:201,
-//       commentCount:123,
-//       tags:["Skills4Growth","EconSkillImpact","GrowWithSkills"],
-//       poster:{
-//           name:"Bissi",
-//       },
-//   },
-//   {
-//       title:"Innovative Technologies Transforming the Construction Industry",
-//       image:blog_3,
-//       category:"Innovations",
-//       content:`
-//       The construction industry is undergoing a revolution, thanks to the advent of 
-//       innovative technologies. These advancements are making construction projects 
-//       more efficient, cost-effective, and sustainable. In this blog post, we'll 
-//       explore some of the most exciting technologies transforming the way we build 
-//       and how our company is leveraging them to deliver superior results.
-//       `,
-//       date:new Date("July 20, 2023"),
-//       likeCount:198,
-//       commentCount:121,
-//       tags:["CommEdu","CommunityEngagement","EduCommunity"],
-//       poster:{
-//           name:"Abisola",
-//       },
-//   },
-// ];
 
 
 export const contacts = [
@@ -376,14 +260,6 @@ export const contacts = [
 
 export const footer = [
   {
-    name: "Explore",
-    routes: [
-      { name: "Privacy Policy", path: "/privacy-policy" },
-      { name: "Terms and Conditions", path: "/terms-conditions" },
-      { name: "Cookie Policy", path: "/cookie-policy" },
-    ],
-  },
-  {
     name: "Section",
     routes: [
       { name: "Home", id: "header" },
@@ -391,8 +267,15 @@ export const footer = [
       { name: "Services", id: "services" },
       { name: "Team", id: "team" },
       { name: "Project", id: "project" },
-      // {name:"Testimonial",id:'testimonial'},
-      // {name:"Blog",id:'blog'},
+     
+    ],
+  },
+  {
+    name: "Explore",
+    routes: [
+      { name: "Privacy Policy", },
+      { name: "Terms and Conditions",  },
+      { name: "Cookie Policy",},
     ],
   },
 ];

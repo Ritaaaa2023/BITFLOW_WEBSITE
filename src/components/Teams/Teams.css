@@ -52,10 +52,7 @@
      
   }
 
-  /* #team .team_card .profile_container{
-    width: 100%;
-    /* min-width: 100px; */
-   */
+
 
   #team .social_container{
     gap:5px;
@@ -82,7 +79,7 @@
 place-items: center;
 }
 #team .team_card .details {
-    text-align: center; /* Centers text inside details */
+    text-align: center; 
   }
 
   #team .team_card .profile_container {
