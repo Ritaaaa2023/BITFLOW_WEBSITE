@@ -1,6 +1,10 @@
 ### **🚀 BitFlow Tech Official Website**  
 
 Welcome to the official repository of **BitFlow Tech**, a smart technology solutions provider specializing in **cloud computing, AI-powered applications, and enterprise software development**.  
+
+## **🌍 Live Demo**  
+🔗 **Visit the website:** [https://bitflow.co.nz](https://bitflow.co.nz)  
+
 ![Homepage Preview](https://github.com/user-attachments/assets/19c6b033-d09a-4bcf-864f-f74cf061446c)
 ![Mobile View](https://github.com/user-attachments/assets/2ee884e1-4001-4614-84f2-e6da86153b90)
 
