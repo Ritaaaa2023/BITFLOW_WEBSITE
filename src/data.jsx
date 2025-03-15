@@ -8,7 +8,7 @@ import { IoConstructSharp } from "react-icons/io5";
 import { GrUserManager } from "react-icons/gr";
 import { 
          member1, member2, member3, member4,building_5,building_6,
-         building_7, building_8,
+         building_7, building_8, book, diagnose, drug,find
        } from "./assets";
 
 export const navTabs = [
@@ -162,29 +162,99 @@ export const teams = [
 
 export const projects = [
   {
+    industry: "Cloud-based SaaS platform",
     title: "Hospital Management System",
     image: building_6,
-    description:
-      "A smart telemedicine platform connecting patients, doctors, and pharmacists. Patients can book appointments, consult via text, image, or video, and manage medical records and prescriptions. Doctors handle consultations, issue medical records, and prescribe medications. Pharmacists oversee drug inventory. AI-driven scheduling, secure consultations, and automated prescription management enhance efficiency and patient care.",
+
+    description: [
+      "Seamless Patient-Doctor-Pharmacist Connectivity",
+      "Convenient Appointment Booking & Consultation",
+      "Comprehensive Medical Record Management",
+      "AI-Driven Scheduling & Workflow Automation ",
+      "Digital Prescription & Pharmacy Integration",
+      "Secure & Cloud-based SaaS Solution",
+    ],
   },
   {
+    industry: "AI-Powered workflow automation",
     title: "Medical Product Recognition App",
     image: building_5,
-    description:
-      "Enhancing nursing efficiency with AI-powered surgical event documentation, medical item recognition, inventory and event management—reducing errors, improving workflow, and enabling better patient care.",
+    description: [
+      "Fast Surgical Event Documentation",
+      "AI-Powered medical Item Recognition",
+      "Automated Inventory Management",
+      "Stremlined Workflow design covering Multiple Scenarios",
+      "Enhanced Nursing Efficiency, accuracy & Patient Care",
+    ],
   },
 
   {
+    industry: "Digital Resource Management",
     title: "Online Course Management System",
     image: building_7,
-    description:
-    "A comprehensive e-learning platform connecting students, teachers, and admins. Students can enroll in courses, manage learning progress, and evaluate completed courses. Teachers oversee course management, student performance, and grading. Admins handle course creation, announcements, and user management. The system includes role-based access, profile customization, and secure authentication, ensuring a seamless and efficient online learning experience."
-},
+    description: [
+      "Centralized platform for resource management",
+      "Role-based access control to streamline workflow",
+      "Automated scheduling & compliance tracking",
+      "Performance tracking & analytics",
+      "AI-powered insights & reporting",
+    ],
+  },
   {
-    title: "Cross-Platform Calendar & Order Management System",
+    industry: "Cross-Platform Data Integration",
+    title: "Unified Data Integration & Task Management",
     image: building_8,
-    description:
-      "A unified system for synchronizing calendar events across platforms and centralizing order management. It integrates multiple platforms, consolidates orders, and assigns tasks to employees via third-party task management tools—ensuring seamless data connectivity, efficient workflow automation, and improved operational oversight.",
+    description: [
+      "Seamless cross-platform synchronization for calendar events, order management, and task allocation",
+      "Centralized data management to consolidate orders ",
+      "Automated task assignment via third-party management tools ",
+      "Real-time data connectivity across multiple platforms",
+    ],
+  },
+];
+
+export const hospital = [
+  {
+    title1: "Introduction",
+    title2: "Introduction",
+    image: building_6,
+    description: [
+      "A telemedicine platform connecting patients, doctors, and pharmacists. It enables online consultations, medical record management, and prescription handling with AI-driven scheduling and automation for improved efficiency and patient care.",
+    ],
+  },
+  {
+    title1: "Book - Consult - Pay",
+    title2: "For Patient:",
+    image: book,
+    description: [
+      "Book Appointments",
+      "Manage Appointment & Medical Records",
+      "Online Consultation via text, images, or secure video/audio calls",
+      "Patients receive prescriptions, make payments, and download prescription files",
+    ],
+  },
+
+  {
+    title1: "Prescription - History",
+    title2: "For Doctor:",
+
+    image: diagnose,
+    description: [
+      "Access patient appointment records and track consultation progress",
+      "Diagnose and prescribe medications",
+      "View patient payment history and medical records",
+    ],
+  },
+  {
+    title1: "Inventory Management",
+    title2: "For Pharmacists:",
+
+    image: drug,
+    description: [
+      "Add, edit, and delete medication records ",
+      "Search drugs by name to update availability",
+      "Ensure prescribed medications align with available stock",
+    ],
   },
 ];
 
@@ -285,44 +355,46 @@ export const projects = [
 export const contacts = [
   {
     name: "Email",
-    value: "bitflow2025@gmail.com",
+    value: "bitflownz@hotmail.com",
     icon: <MdOutlineAlternateEmail />,
+    image: find,
   },
   {
     name: "Phone Number",
     value: "+0221700698",
     icon: <IoCallOutline />,
+    image:"",
   },
   {
     name: "Address",
-    value:
-      "Unleash Space, Engineering Building, University of Auckland",
+    value: "Unleash Space, Engineering Building, University of Auckland",
     icon: <IoLocationOutline />,
+    image:"",
   },
 ];
 
 
 export const footer = [
-    {
-      name:"Explore",
-      routes:[
-        {name:"Privacy Policy"},
-        {name:"Terms and Conditions"},
-        {name:"Cookie Policy"},
-      ]
-    },
-    {
-        name:"Section",
-        routes:[
-          {name:"Home",id:'header'},
-          {name:"About Us",id:'about'},
-          {name:"Services",id:'services'},
-          {name:"Team",id:'team'},
-          {name:"Project",id:'project'},
-          // {name:"Testimonial",id:'testimonial'},
-          // {name:"Blog",id:'blog'},
-        ]
-      },
-]
+  {
+    name: "Explore",
+    routes: [
+      { name: "Privacy Policy", path: "/privacy-policy" },
+      { name: "Terms and Conditions", path: "/terms-conditions" },
+      { name: "Cookie Policy", path: "/cookie-policy" },
+    ],
+  },
+  {
+    name: "Section",
+    routes: [
+      { name: "Home", id: "header" },
+      { name: "About Us", id: "about" },
+      { name: "Services", id: "services" },
+      { name: "Team", id: "team" },
+      { name: "Project", id: "project" },
+      // {name:"Testimonial",id:'testimonial'},
+      // {name:"Blog",id:'blog'},
+    ],
+  },
+];
 
 

@@ -2,12 +2,16 @@ import React from 'react'
 import "./Contact.css"
 import { contacts } from '../../data';
 import { Button, Flex, Form, Input, Select,Space } from "antd";
+import { success } from '../../assets';
+import { Card } from "antd";
+const { Meta } = Card;
+
 
 const Contact = () => {
   const [form] = Form.useForm();
   const layout = {
     labelCol: {
-      span: 24,
+      span: 36,
     },
     wrapperCol: {
       span: 36,
@@ -132,32 +136,30 @@ const Contact = () => {
 
               <Form.Item
                 name="intro"
-                label="Message"
+                label="How can we help you?"
                 layout="vertical"
                 width="100%"
                 rules={[
                   {
                     required: false,
-                    message: "Please input Intro",
+                    message: "Please input message!",
                   },
                 ]}
               >
                 <Input.TextArea showCount maxLength={100} />
               </Form.Item>
               <div className="contact_form_bottom">
-                <Form.Item {...tailLayout}>
-                  <Space>
-                    <Button htmlType="button" onClick={onReset} className="btn">
+                <Form.Item style={{ width: "100%", textAlign: "center" }}>
+                  {/* <Button htmlType="button" onClick={onReset} className="btn">
                       Reset
-                    </Button>
-                    <Button
-                      type="primary"
-                      htmlType="submit"
-                      className="btn btn_primary"
-                    >
-                      Submit
-                    </Button>
-                  </Space>
+                    </Button> */}
+                  <button
+                    type="primary"
+                    htmlType="submit"
+                    className="btn btn_primary"
+                  >
+                    Send
+                  </button>
                 </Form.Item>
               </div>
             </Form>
@@ -168,13 +170,27 @@ const Contact = () => {
           <h1 className="title">
             Find <span className="g-text">Us</span>
           </h1>
-          {contacts.map((contact, index) => (
-            <div className="option" key={index}>
-              <div className="icon_container">{contact.icon}</div>
-              <h3 className="name">{contact.name}</h3>
-              <h4 className="text_muted">{contact.value}</h4>
-            </div>
-          ))}
+
+          <div className="option">
+            <Card
+              className="contact_card"
+              hoverable
+              style={{
+                width: 500,
+              }}
+              cover={<img alt="example" src={success} />}
+            >
+              <Meta
+                title="Email"
+                description="bitflownz@hotmail.com"
+                style={{ marginBottom: "20px" }}
+              />
+              <Meta
+                title="Adress"
+                description="Unleash Space, Engineering Building, University of Auckland"
+              />
+            </Card>
+          </div>
         </div>
       </div>
     </section>

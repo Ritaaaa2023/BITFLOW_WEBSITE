@@ -3,14 +3,22 @@ import "./Project.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { projects } from "../../data";
+import { projects,hospital } from "../../data";
+import { FcNext } from "react-icons/fc";
+import { GoCheckCircle } from "react-icons/go";
+import { Space } from "antd";
 
 const Project = () => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
-
-  const toggleReadMore = (index) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
-  };
+  function SampleArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style,  cursor:"pointer",display: "block",background: "rgba(0,0,0,0.5)",borderRadius: "50%",width: "40px",height: "40px",padding: "10px",position: "absolute",top: "50%",transform: "translateY(-50%)",right: "-20px",zIndex: "1"}}
+        onClick={onClick}
+      />
+    );
+  }
 
   const settings = {
     infinite: true,
@@ -20,12 +28,51 @@ const Project = () => {
     pauseOnHover: true,
     autoplay: true,
     autoplaySpeed: 2000,
+ 
     responsive: [
+      {
+        breakpoint: 950,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: 0,
+        },
+      },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
           centerPadding: 0,
+        },
+      },
+    ],
+  };
+
+  const settings2 = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    nextArrow: <SampleArrow />,
+    prevArrow: <SampleArrow />,
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          dots: true,
+         
         },
       },
     ],
@@ -41,7 +88,7 @@ const Project = () => {
           Innovative solutions for multi-industry, cross-platform integration
           and development
         </h3>
-        <Slider {...settings} className="projects_container">
+        <Slider {...settings} className="projects_container" >
           {projects.map((project, index) => (
             <React.Fragment key={index}>
               <div className="image_container">
@@ -49,20 +96,53 @@ const Project = () => {
               </div>
               <div className="box">
                 <h1 className="name">{project.industry}</h1>
-                <h2 className="name">{project.title}</h2>
               </div>
               <div className="details">
                 <h3 className="name">{project.title}</h3>
-                <p
-                  className={`text_muted description ${
-                    expandedIndex === index ? "expanded" : "collapsed"
-                  }`}
-                >
-                  {project.description}
+                <p className="text_muted description">
+                  {" "}
+                  <ul className="list" style={{ listStyle: "disc" }}>
+                    {project.description.map((point, index) => (
+                      <li key={index}>{point}</li>
+                    ))}
+                  </ul>
                 </p>
-                <button className="btn" onClick={() => toggleReadMore(index)}>
+                {/* <button className="btn" onClick={() => toggleReadMore(index)}>
                   {expandedIndex === index ? "Read less" : "Read more"}
-                </button>
+                </button> */}
+              </div>
+            </React.Fragment>
+          ))}
+        </Slider >
+
+        <p className="sub_title" >
+          Hospital Management System
+        </p>
+        <Slider {...settings2} className="hospital_container">
+          {hospital.map((project, index) => (
+            <React.Fragment key={index}>
+              <div className="image_container">
+                <img src={project.image} alt="" />
+              </div>
+              <div className="box">
+                {/* <h1 className="name">{project.industry}</h1> */}
+               
+                  <h4 className="name">{project.title1}</h4>
+             
+              </div>
+              <div className="details">
+                <h4 className="name">{project.title2}</h4>
+                <p className="text_muted description">
+                  {" "}
+                  <ul className="list" style={{ listStyle: "disc" }}>
+                    {project.description.map((point, index) => (
+                      <li key={index}>{point}</li>
+                    ))}
+                  </ul>
+                </p>
+                {/* <button className="btn" onClick={() => toggleReadMore(index)}>
+                  {expandedIndex === index ? "Read less" : "Read more"}
+                </button> */}
               </div>
             </React.Fragment>
           ))}

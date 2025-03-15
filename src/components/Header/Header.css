@@ -86,3 +86,10 @@
    }
 
 }
+
+@media (max-width: 430px){
+  #header .title .g-text {
+    display: block; /* Forces "Smarter Business" onto a new line */
+    margin-top: 5px; /* Optional: Adjust spacing */
+  }
+}

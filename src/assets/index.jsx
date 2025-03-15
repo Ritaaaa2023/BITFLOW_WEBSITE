@@ -27,3 +27,10 @@ export { default as company08 } from "./company08.jpg";
 export { default as about } from "./about.jpg";
 export { default as about01 } from "./about01.png";
 export { default as bitflow_logo} from "./bitflow-logo.svg";
+
+export { default as book } from "./book.png";
+export { default as diagnose} from "./diagnose.png";
+export { default as drug} from "./drug.png";
+export { default as find } from "./find.jpg";
+
+export { default as success } from "./success.jpg";
