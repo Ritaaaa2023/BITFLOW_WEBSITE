@@ -1,8 +1,8 @@
 ### **🚀 BitFlow Tech Official Website**  
 
 Welcome to the official repository of **BitFlow Tech**, a smart technology solutions provider specializing in **cloud computing, AI-powered applications, and enterprise software development**.  
-![Homepage Preview](https://github.com/Ritaaaa2023/BITFLOW_WEBSITE/issues/1#issue-2922622983)
-![Mobile View](https://github.com/Ritaaaa2023/BITFLOW_WEBSITE/issues/2#issue-2922623825)
+![Homepage Preview](https://github.com/user-attachments/assets/19c6b033-d09a-4bcf-864f-f74cf061446c)
+![Mobile View](https://github.com/user-attachments/assets/2ee884e1-4001-4614-84f2-e6da86153b90)
 
 This website is built with **modern front-end technologies** to ensure **high performance, security, and full responsiveness across all devices**. It is deployed on **AWS (CloudFront + S3 + Route 53)** for high availability and optimized performance.  
 
