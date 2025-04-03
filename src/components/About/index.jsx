@@ -77,8 +77,8 @@ const About = () => {
                 <FaCheck />
               </div>
               <div className="details">
-                <p className="text_muted">Long-Term</p>
-                <h3>success</h3>
+                <p className="text_muted">On-time</p>
+                <h3>Delivery</h3>
               </div>
             </div>
 

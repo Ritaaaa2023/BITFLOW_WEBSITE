@@ -12,5 +12,25 @@
   font-size:1.5rem;
   color:var(--color-primary);
   font-weight: 600;
+ 
 }
+.icon_container {
+  width: 48px; /* 或你想要的尺寸 */
+  height: 48px;
+  border-radius: 50%;     /* 让容器变圆 */
+  overflow: hidden;       /* 裁剪超出的图像 */
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* 可选：背景色更清晰地显示圆形边界 */
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* 图像充满但不变形，超出部分被裁切 */
+}
+
+
 

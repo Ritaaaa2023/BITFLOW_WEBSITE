@@ -214,7 +214,7 @@ const Contact = () => {
                 style={{ marginBottom: "20px" }}
               />
               <Meta
-                title="Adress"
+                title="Address"
                 description="Unleash Space, Engineering Building, University of Auckland"
               />
             </Card>

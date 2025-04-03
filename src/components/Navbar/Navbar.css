@@ -27,8 +27,11 @@
   box-shadow: var(--shadow-1);
 }
 
-.navbar.visible .logo .name span {
+.navbar.visible .logo .name  {
   color: var(--color-primary);
+}
+.navbar.visible .logo .name span {
+  color: black;
 }
 
 .navbar .box {
